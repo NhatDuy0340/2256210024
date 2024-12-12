@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự báo giá cổ phiếu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Dự báo giá cổ phiếu</h1>
+        <div class="card shadow">
+            <div class="card-body">
+                <form id="stock-prediction-form">
+                    <div class="mb-3">
+                        <label for="stock-code" class="form-label">Mã cổ phiếu</label>
+                        <input type="text" id="stock-code" class="form-control" placeholder="Nhập mã cổ phiếu">
+                    </div>
+                    <div class="mb-3">
+                        <label for="forecast-method" class="form-label">Kỹ thuật dự báo</label>
+                        <select id="forecast-method" class="form-select">
+                            <option value="">Chọn kỹ thuật</option>
+                            <option value="moving_average">Moving Average</option>
+                            <option value="exponential_smoothing_0_1">Exponential Smoothing (alpha = 0.1)</option>
+                            <option value="exponential_smoothing_toi_uu">Exponential Smoothing (tối ưu) </option>
+                            <option value="holt">Holt</option>
+                            <option value="holt_he_tieu_chuan">Holt ( hệ tiêu chuẩn)</option>
+                            <option value="holt_he_toi_uu">Holt ( hệ tối ưu)</option>
+                            <option value="holt_winter">Holt Winter</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary w-100" id="predict-button">Dự báo</button>
+                </form>
+            </div>
+        </div>
+        <div id="result" class="mt-4">
+            <!-- Kết quả dự báo sẽ hiển thị ở đây -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

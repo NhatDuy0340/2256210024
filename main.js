@@ -21,13 +21,12 @@ document.getElementById('predict-button').addEventListener('click', function () 
     // Dữ liệu đường dẫn hình ảnh
     const images = {
         MSFT: {
-            moving_average: 'Images/moving_average.png',
-            exponential_smoothing_0_1: 'Images/smoothing_alpha_0.1.png',
-            exponential_smoothing_toi_uu: 'Images/smoothing_toi_uu.png',
+            moving_average_naive: 'Images/moving_average_naive.png',
+            moving_average_3step: 'Images/moving_average_3step.png',
+            moving_average_6step: 'Images/moving_average_6step.png',
+            exponential_smoothing: 'Images/exponential_smoothing.png',
             holt: 'Images/Holt.png',
-            holt_he_tieu_chuan: 'Images/holt_tieu_chuan.png',
-            holt_he_toi_uu: 'Images/holt_toi_uu.png',
-            holt_winter: 'Images/holt_winter.png',
+            holt_winters: 'Images/Holt_winters.png',
         }
     };
 

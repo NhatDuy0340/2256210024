@@ -20,13 +20,12 @@
                         <label for="forecast-method" class="form-label">Kỹ thuật dự báo</label>
                         <select id="forecast-method" class="form-select">
                             <option value="">Chọn kỹ thuật</option>
-                            <option value="moving_average">Moving Average</option>
-                            <option value="exponential_smoothing_0_1">Exponential Smoothing (alpha = 0.1)</option>
-                            <option value="exponential_smoothing_toi_uu">Exponential Smoothing (tối ưu) </option>
+                            <option value="moving_average_naive">Moving Average Naive</option>
+                            <option value="moving_average_3step">Moving Average 3-Step</option>
+                            <option value="moving_average_6step">Moving Average 6-Step</option>
+                            <option value="exponential_smoothing">Exponential Smoothing</option>
                             <option value="holt">Holt</option>
-                            <option value="holt_he_tieu_chuan">Holt ( hệ tiêu chuẩn)</option>
-                            <option value="holt_he_toi_uu">Holt ( hệ tối ưu)</option>
-                            <option value="holt_winter">Holt Winter</option>
+                            <option value="holt_winters">Holt Winters</option>
                         </select>
                     </div>
                     <button type="button" class="btn btn-primary w-100" id="predict-button">Dự báo</button>
